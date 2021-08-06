@@ -21,6 +21,9 @@ namespace Countries.API
         {
 
             services.AddControllers();
+
+            services.AddMemoryCache();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Countries.API", Version = "v1" });
